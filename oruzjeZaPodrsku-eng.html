@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oruzje</title>
+</head>
+<body>
+    <header>
+        <img src="hamburger black.png" id='hamburger' onclick='hamburgerToggle()'>
+        <a href="index-eng.html" id="logo">ORUZJE - INFO</a>
+        <div id="navigacioni">
+        <a href="index-eng.html" class="navItem">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem">Assault rifles</a>
+        <a href="automati-eng.html" class="navItem">Submachine guns</a>
+        <a href="snajperi-eng.html" class="navItem">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku-eng.html" class="navItem">Support weapons</a>
+        <a href="pistolji-eng.html" class="navItem">Handguns</a>
+        </div>
+        <img src="pngegg.png" id="menuIcon" onclick="dropDown()">
+       
+    </header>
+    <div id="hamburgerMenu">
+        <a href="index-eng.html" class="navItem ham">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem ham">Assault rifles</a>
+        <a href="automati-eng.html" class="navItem ham">Submachine guns</a>
+        <a href="snajperi-eng.html" class="navItem ham">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku-eng.html" class="navItem ham">Support guns</a>
+        <a href="pistolji-eng.html" class="navItem ham">Handguns</a>
+    </div>
+    <div id="optionsMenu">
+        <div class="optionsContent">
+            <p>Language: </p>
+            <div id="langSelect">
+                <a href="oruzjeZaPodrsku.html"><img src="srb.png" class="langIcon" title="Srpski"></a>
+                <a href="oruzjeZaPodrsku-eng.html"><img src="gbr.png" class="langIcon" title="English"></a>
+                </div> 
+        </div>
+        <div class="optionsContent">
+            <p>Theme: </p>
+            <div id="langSelect">
+             <div id="frame" class="frame">
+                <div class="ball" id="ball">D</div>
+            </div>
+            <input type="checkbox" id="check" class="check" onchange="modeChange()" title="Promena teme">
+            </div>
+            </div>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Support weapons: </h4>
+        <p>
+            Support weapons are made for supporting land forces. Machine guns, grenade launchers, rocket launchers, all of them belong to this class of weapons.
+            
+        </p>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Most popular support weapons:</h4>
+        <div id="flex-container">
+            <div class="content"><img src="podrska/pkm.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>PKM</h3>
+                    <ul>
+                        <li>Caliber: 7,62 x 54 mm</li>
+                        <li>Magazine capacity: 50 rounds</li>
+                        <li>Rate of fire: 650 rounds/min</li>
+                        <li>Weapon length: 1192 mm</li>
+                        <li>Barrel length: 605 mm</li>
+                        <li>Mass: 7,5 kg</li>
+                        <li>Max effective range: 1000 m</li>
+                        <li>Year produced: 1969.</li>
+                        <li>Place of origin: USSR</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="podrska/fn mag.jpg" alt="" onclick="modal(this.src)" class='template'>
+                <div id="tekst"><h3>FN MAG 58</h3>
+                    <ul>
+                        <li>Caliber: 7,62 x 51 mm</li>
+                        <li>Magazine capacity: 50 rounds</li>
+                        <li>Rate of fire: 900 rounds/min</li>
+                        <li>Weapon length: 1263 mm</li>
+                        <li>Barrel length: 630 mm</li>
+                        <li>Mass: 11,79 kg</li>
+                        <li>Max effective range: 1800 m</li>
+                        <li>Year produced: 2006.</li>
+                        <li>Place of origin: Belgium</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="podrska/m79.jpg" alt="" onclick="modal(this.src)" class='template'>
+                <div id="tekst"><h3>M79 Grenade launcher</h3>
+                    <ul>
+                        <li>Caliber: 40 x 46 mm</li>
+                        <li>Magazine capacity: 1 grenade</li>
+                        <li>Rate of fire: depends on the operator</li>
+                        <li>Weapon length: 731 mm</li>
+                        <li>Barrel length: 368 mm</li>
+                        <li>Mass: 2,7 kg</li>
+                        <li>Max effective range: 350 m</li>
+                        <li>Year produced: 1961.</li>
+                        <li>Place of origin: USA</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="podrska/rpg.jpg" alt="" onclick="modal(this.src)" class='template'> 
+                <div id="tekst"><h3>RPG-7</h3>
+                    <ul>
+                        <li>Caliber: 40 mm</li>
+                        <li>Magazine capacity: 1 grenade</li>
+                        <li>Rate of fire: depends on the operator</li>
+                        <li>Weapon length: 950 mm</li>
+                        <li>Barrel length: /</li>
+                        <li>Mass: 6,3 kg</li>
+                        <li>Max effective range: 330 m</li>
+                        <li>Year produced: 1958.</li>
+                        <li>Place of origin: USSR</li>
+                    </ul></div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="blur" class="modal">
+        <div class="close" id="close"><img src="X.png" id="x"></div>
+        <img class="modalPic" id="image">
+    </div>
+    <button id="scrollToTop" onclick="scroll()">
+        <img src="pngegg.png" onclick="scroll()">
+    </button> 
+    <div id="bannerSadrzaj" class="diff">
+        <h3 id="bannerNaslov">AUTOMATSKE PUŠKE</h3>
+        <p id="bannerText">
+        </p>
+        <a href="automatskePuske.html" id="bannerLink">DETALJNIJE &#8594;</a>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/CosaPfk/"><img src="fejsbuk black.png" class="socialImg"></a>
+            <a href="https://www.instagram.com/cosa__12/"><img src="instagram black.png" class="socialImg"></a>
+            <a href="https://twitter.com/cosaa12"><img src="ptica black.png" class="socialImg"></a>
+            <a href="https://www.youtube.com/channel/UC-CBhmxU7__14kiT8ViXsNw"><img src="jubito black.png" class="socialImg" id="yt"></a>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

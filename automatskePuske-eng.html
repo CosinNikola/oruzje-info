@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oruzje-Info Automatske Puške</title>
+</head>
+<body>
+    <header>
+        <img src="hamburger black.png" id='hamburger' onclick='hamburgerToggle()'>
+        <a href="indexroundseng.html" id="logo">ORUZJE - INFO</a>
+        <div id="navigacioni">
+        <a href="index-eng.html" class="navItem">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem">Assault rifles</a>
+        <a href="automati.html" class="navItem">Submachine guns</a>
+        <a href="snajperi.html" class="navItem">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem">Support weapons</a>
+        <a href="pistolji.html" class="navItem">Handguns</a>
+        </div>
+        <img src="pngegg.png" id="menuIcon" onclick="dropDown()">
+       
+    </header>
+    <div id="hamburgerMenu">
+        <a href="index-eng.html" class="navItem ham">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem ham">Assault rifles</a>
+        <a href="automati-eng.html" class="navItem ham">Submachine guns</a>
+        <a href="snajperi-eng.html" class="navItem ham">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku-eng.html" class="navItem ham">Support guns</a>
+        <a href="pistolji-eng.html" class="navItem ham">Handguns</a>
+    </div>
+    <div id="optionsMenu">
+        <div class="optionsContent">
+            <p>Language: </p>
+            <div id="langSelect">
+                <a href="automatskePuske.html"><img src="srb.png" class="langIcon" title="Srpski"></a>
+                <a href="automatskePuske-eng.html"><img src="gbr.png" class="langIcon" title="English"></a>
+                </div> 
+        </div>
+        <div class="optionsContent">
+            <p>Theme: </p>
+            <div id="langSelect">
+             <div id="frame" class="frame">
+                <div class="ball" id="ball">D</div>
+            </div>
+            <input type="checkbox" id="check" class="check" onchange="modeChange()" title="Promena teme">
+            </div>
+            </div>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Assault rifles</h4>
+        <p>
+            An assault rifle is a selective fire rifle that uses an intermediate cartridge and a detachable magazine. Assault rifles were first put into mass production and accepted into widespread service during World War II.
+            Assault rifle is used at max distances of about 400m.
+        </p>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Most popular assault rifles:</h4>
+        <div id="flex-container">
+            <div class="content"><img src="automatske puske/ak47.jpeg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>AK 47</h3>
+                    <ul>
+                        <li>Caliber: 7,62 x 39 mm</li>
+                        <li>Magazine capacity: 30 rounds</li>
+                        <li>Rate of fire: 600 rounds/min</li>
+                        <li>Weapon length: 870 mm</li>
+                        <li>Barrel length: 415 mm</li>
+                        <li>Mass: 4,3 kg</li>
+                        <li>Max effective range: 1500 m</li>
+                        <li>Year produced: 1948.</li>
+                        <li>Place of origin: USSR</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/fn scar.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>FN Scar - L</h3>
+                    <ul>
+                        <li>Caliber: 5,56 x 45 mm NATO</li>
+                        <li>Magazine capacity: 30 rounds</li>
+                        <li>Rate of fire: 625 rounds/min</li>
+                        <li>Weapon length: 889 mm</li>
+                        <li>Barrel length: 351 mm</li>
+                        <li>Mass: 3,29 kg</li>
+                        <li>Max effective range: 500 m</li>
+                        <li>Year produced: 2004.</li>
+                        <li>Place of origin: Belgium</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/hk416.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Heckler & Koch 416</h3>
+                    <ul>
+                        <li>Caliber: 5,56 x 45 mm NATO</li>
+                        <li>Magazine capacity: 30 rounds</li>
+                        <li>Rate of fire: 900 rounds/min</li>
+                        <li>Weapon length: 881 mm</li>
+                        <li>Barrel length: 230 mm</li>
+                        <li>Mass: 3,02 kg</li>
+                        <li>Max effective range: 500m</li>
+                        <li>Year produced: 2004.</li>
+                        <li>Place of origin: Germany</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/g36c.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Heckler & Koch G36c</h3>
+                    <ul>
+                        <li>Caliber: 5,56 x 45 mm NATO</li>
+                        <li>Magazine capacity: 30 rounds</li>
+                        <li>Rate of fire: 750 rounds/min</li>
+                        <li>Weapon length: 720 mm</li>
+                        <li>Barrel length: 228 mm</li>
+                        <li>Mass: 2,82 kg</li>
+                        <li>Max effective range: 200 m</li>
+                        <li>Year produced: 2001.</li>
+                        <li>Place of origin: Germany</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/m16.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Colt M16</h3>
+                    <ul>
+                        <li>Caliber: 5,56 x 45 mm NATO</li>
+                        <li>Magazine capacity: 20 rounds</li>
+                        <li>Rate of fire: 45-60 rounds/min</li>
+                        <li>Weapon length: 1003 mm</li>
+                        <li>Barrel length: 508 mm</li>
+                        <li>Mass: 4 kg</li>
+                        <li>Max effective range: 550 m</li>
+                        <li>Year produced: 1963.</li>
+                        <li>Place of origin: USA</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/m70.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Zastava M70</h3>
+                    <ul>
+                        <li>Caliber: 7,62 x 39 mm</li>
+                        <li>Magazine capacity: 30 rounds</li>
+                        <li>Rate of fire: 620 rounds/min</li>
+                        <li>Weapon length: 900 mm</li>
+                        <li>Barrel length: 415 mm</li>
+                        <li>Mass: 4.2 kg</li>
+                        <li>Max effective range: 300 m</li>
+                        <li>Year produced: 1970.</li>
+                        <li>Place of origin: SFR Yugoslavia / Serbia</li>
+                    </ul></div>
+            </div>
+                        
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    <button id="scrollToTop" onclick="scroll()">
+        <img src="pngegg.png" alt="">
+    </button>
+    <div id="bannerSadrzaj" class="sadrzaj diff">
+        <h3 id="bannerNaslov">AUTOMATSKE PUŠKE</h3>
+        <p id="bannerText">
+        </p>
+        <a href="automatskePuske.html" id="bannerLink">DETALJNIJE &#8594;</a>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/CosaPfk/"><img src="fejsbuk black.png" class="socialImg"></a>
+            <a href="https://www.instagram.com/cosa__12/"><img src="instagram black.png" class="socialImg"></a>
+            <a href="https://twitter.com/cosaa12"><img src="ptica black.png" class="socialImg"></a>
+            <a href="https://www.youtube.com/channel/UC-CBhmxU7__14kiT8ViXsNw"><img src="jubito black.png" class="socialImg" id="yt"></a>
+          </div>
+    </footer>
+    <div id="blur" class="modal">
+        <div class="close" id="close"><img src="X.png" id="x"></div>
+        <img class="modalPic" id="image">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

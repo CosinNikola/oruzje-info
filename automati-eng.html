@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oruzje-Info Automati</title>
+</head>
+<body>
+    <header>
+        <img src="hamburger black.png" id='hamburger' onclick='hamburgerToggle()'>
+        <a href="index-eng.html" id="logo">ORUZJE - INFO</a>
+        <div id="navigacioni">
+        <a href="index-eng.html" class="navItem">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem">Assault rifles</a>
+        <a href="automati.html" class="navItem">Submachine guns</a>
+        <a href="snajperi.html" class="navItem">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem">Support weapons</a>
+        <a href="pistolji.html" class="navItem">Handguns</a>
+        </div>
+        <img src="pngegg.png" id="menuIcon" onclick="dropDown()">
+       
+    </header>
+    <div id="hamburgerMenu">
+        <a href="index-eng.html" class="navItem ham">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem ham">Assault rifles</a>
+        <a href="automati-eng.html" class="navItem ham">Submachine guns</a>
+        <a href="snajperi-eng.html" class="navItem ham">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku-eng.html" class="navItem ham">Support guns</a>
+        <a href="pistolji-eng.html" class="navItem ham">Handguns</a>
+    </div>
+    <div id="optionsMenu">
+        <div class="optionsContent">
+            <p>Language: </p>
+            <div id="langSelect">
+                <a href="automati.html"><img src="srb.png" class="langIcon" title="Srpski"></a>
+                <a href="automati-eng.html"><img src="gbr.png" class="langIcon" title="English"></a>
+                </div> 
+        </div>
+        <div class="optionsContent">
+            <p>Theme: </p>
+            <div id="langSelect">
+             <div id="frame" class="frame">
+                <div class="ball" id="ball">D</div>
+            </div>
+            <input type="checkbox" id="check" class="check" onchange="modeChange()" title="Promena teme">
+            </div>
+            </div>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Submachine guns:</h4>
+        <p>
+            A submachine gun, abbreviated SMG, is a magazine-fed, automatic carbine designed to fire handgun cartridges. The term "submachine gun" was coined by John T. Thompson, the inventor of the Thompson submachine gun, to describe its design concept as an automatic firearm with notably less firepower than a machine gun (hence the prefix "sub-"). As a machine gun must fire rifle cartridges to be classified as such, submachine guns are not considered machine guns.
+        </p>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Most popular SMGs:</h4>
+        <div id="flex-container">
+            <div class="content"><img src="automati/mp5.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Heckler & Koch MP5</h3>
+                    <ul>
+                        <li>Caliber: 9 x 19 mm</li>
+                        <li>Magazine capacity: 30 rounds</li>
+                        <li>Rate of fire: 800 rounds/min</li>
+                        <li>Weapon length: 680 mm</li>
+                        <li>Barrel length: 225 mm</li>
+                        <li>Mass: 3,08 kg</li>
+                        <li>Max effective range: 200m</li>
+                        <li>Year produced: 1966.</li>
+                        <li>Place of origin: West Germany</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automati/uzi.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Uzi</h3>
+                    <ul>
+                        <li>Caliber: 9 x 19 mm</li>
+                        <li>Magazine capacity: 32 rounds</li>
+                        <li>Rate of fire: 600 rounds/min</li>
+                        <li>Weapon length: 445 mm</li>
+                        <li>Barrel length: 260 mm</li>
+                        <li>Mass: 3,5 kg</li>
+                        <li>Max effective range: 150 m</li>
+                        <li>Year produced: 1950.</li>
+                        <li>Place of origin: Israek</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automati/ump45.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Heckler & Koch UMP45</h3>
+                    <ul>
+                        <li>Caliber: .45 ACP</li>
+                        <li>Magazine capacity: 25 rounds</li>
+                        <li>Rate of fire: 500 rounds/min</li>
+                        <li>Weapon length: 690 mm</li>
+                        <li>Barrel length: 200 mm</li>
+                        <li>Mass: 2,5 kg</li>
+                        <li>Max effective range: 65 m</li>
+                        <li>Year produced: 2000.</li>
+                        <li>Place of origin: Germany</li>
+
+                    </ul></div>
+            </div>
+            
+            
+        </div>
+        </div>
+    </div>
+    <button id="scrollToTop" onclick="scroll()">
+        <img src="pngegg.png" onclick="scroll()">
+    </button>
+    <div id="bannerSadrzaj" class="diff">
+        <h3 id="bannerNaslov">AUTOMATSKE PUŠKE</h3>
+        <p id="bannerText">
+        </p>
+        <a href="automatskePuske.html" id="bannerLink">DETALJNIJE &#8594;</a>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/CosaPfk/"><img src="fejsbuk black.png" class="socialImg"></a>
+            <a href="https://www.instagram.com/cosa__12/"><img src="instagram black.png" class="socialImg"></a>
+            <a href="https://twitter.com/cosaa12"><img src="ptica black.png" class="socialImg"></a>
+            <a href="https://www.youtube.com/channel/UC-CBhmxU7__14kiT8ViXsNw"><img src="jubito black.png" class="socialImg" id="yt"></a>
+          </div>
+    </footer>
+    <div id="blur" class="modal">
+        <div class="close" id="close"><img src="X.png" id="x"></div>
+        <img class="modalPic" id="image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

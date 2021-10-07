@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oruzje</title>
+</head>
+<body>
+    <header>
+        <img src="hamburger black.png" id='hamburger' onclick='hamburgerToggle()'>
+        <a href="index.html" id="logo">ORUZJE - INFO</a>
+        <div id="navigacioni">
+        <a href="index.html" class="navItem">Naslovna</a>
+        <a href="automatskePuske.html" class="navItem">Automatske puške</a>
+        <a href="automati.html" class="navItem">Automati</a>
+        <a href="snajperi.html" class="navItem">Snajperske puške</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem">Oružje za podršku</a>
+        <a href="pistolji.html" class="navItem">Pištolji</a>
+        </div>
+        <img src="pngegg.png" id="menuIcon" onclick="dropDown()">
+    </header>
+    <div id="hamburgerMenu">
+        <a href="index.html" class="navItem ham">Naslovna</a>
+        <a href="automatskePuske.html" class="navItem ham">Automatske puške</a>
+        <a href="automati.html" class="navItem ham">Automati</a>
+        <a href="snajperi.html" class="navItem ham">Snajperske puške</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem ham">Oružje za podršku</a>
+        <a href="pistolji.html" class="navItem ham">Pistolji</a>
+    </div>
+    <div id="optionsMenu">
+        <div class="optionsContent">
+            <p>Promena jezika: </p>
+    <div id="langSelect">
+        <a href="pistolji.html"><img src="srb.png" class="langIcon" title="Srpski"></a>
+        <a href="pistolji-eng.html"><img src="gbr.png" class="langIcon" title="English"></a>
+            </div> 
+        </div>
+        <div class="optionsContent">
+            <p>Promena teme: </p>
+            <div id="langSelect">
+             <div id="frame" class="frame">
+                <div class="ball" id="ball">D</div>
+            </div>
+            <input type="checkbox" id="check" class="check" onchange="modeChange()" title="Promena teme">
+            </div>
+            </div>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Pištolji: </h4>
+        <p>
+            Pištolj je naziv za vatreno oružje dizajnirano za ručno korišćenje, za jednu ili obe ruke. Ove karakteristike izdvajaju pištolje kao opštu klasu vatrenih oružja, pored pušaka.
+
+Iako se u engleskom jeziku pravi razlika između reči pištolj - handgun, koja predstavlja klasu vatrenog oružja i reči pištolj - pistol, koja predstavlja užu podvrstu oružja, u našem jeziku se za obe ove kategorije oružja koristi samo jedna reč, pištolj.
+        </p>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Najpoznatiji pištolji:</h4>
+        <div id="flex-container">
+            <div class="content"><img src="pistolji/glock.jpg" alt="" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Glock 17</h3>
+                    <ul>
+                        <li>Kalibar: 9 x 19 mm Parabellum</li>
+                        <li>Kapacitet okvira: 17 metaka</li>
+                        <li>Teoretska brzina paljbe: /</li>
+                        <li>Dužina oružja: 202 mm</li>
+                        <li>Dužina cevi: 114 mm</li>
+                        <li>Težina: 710 g</li>
+                        <li>Maks. efektivni domet: 50 m</li>
+                        <li>Godina proizvodnje: 1984.</li>
+                        <li>Zemlja porekla: Austrija</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="pistolji/m1911.jpg" alt="" onclick="modal(this.src)" class='template'>
+                <div id="tekst"><h3>Colt M1911</h3>
+                    <ul>
+                        <li>Kalibar: 11,43 x 23 mm</li>
+                        <li>Kapacitet okvira: 7 metaka</li>
+                        <li>Teoretska brzina paljbe: </li>
+                        <li>Dužina oružja: 210 mm</li>
+                        <li>Dužina cevi: 127 mm</li>
+                        <li>Težina: 1,1 kg</li>
+                        <li>Maks. efektivni domet: 100 m</li>
+                        <li>Godina proizvodnje: 1911.</li>
+                        <li>Zemlja porekla: SAD</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="pistolji/bereta.jpg" alt="" onclick="modal(this.src)" class='template'>
+                <div id="tekst"><h3>Beretta 92</h3>
+                    <ul>
+                        <li>Kalibar: 9 x 19 mm</li>
+                        <li>Kapacitet okvira: 15 metaka</li>
+                        <li>Teoretska brzina paljbe:</li>
+                        <li>Dužina oružja: 217 mm</li>
+                        <li>Dužina cevi: 125 mm</li>
+                        <li>Težina: 0,95 kg</li>
+                        <li>Maks. efektivni domet: 100 m</li>
+                        <li>Godina proizvodnje: 1976.</li>
+                        <li>Zemlja porekla: Italija</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="pistolji/cz75.jpg" alt="" onclick="modal(this.src)" class='template'>
+                <div id="tekst"><h3>CZ 75</h3>
+                    <ul>
+                        <li>Kalibar: 9 x 19 mm</li>
+                        <li>Kapacitet okvira: 12-26 metaka</li>
+                        <li>Teoretska brzina paljbe: </li>
+                        <li>Dužina oružja: 206,3 mm</li>
+                        <li>Dužina cevi: 120 mm</li>
+                        <li>Težina: 1 kg</li>
+                        <li>Maks. efektivni domet: 100 m</li>
+                        <li>Godina proizvodnje: 1976.</li>
+                        <li>Zemlja porekla: Čehoslovačka</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="pistolji/cz99.jpg" alt="" onclick="modal(this.src)" class='template'>
+                <div id="tekst"><h3>Zastava CZ-99</h3>
+                    <ul>
+                        <li>Kalibar: 9 x 19 mm</li>
+                        <li>Kapacitet okvira: 15 metaka</li>
+                        <li>Teoretska brzina paljbe: </li>
+                        <li>Dužina oružja: 190 mm</li>
+                        <li>Dužina cevi: 108 mm</li>
+                        <li>Težina: 0,97 kg</li>
+                        <li>Maks. efektivni domet: 50 m</li>
+                        <li>Godina proizvodnje: 1989.</li>
+                        <li>Zemlja porekla: SFR Jugoslavija</li>
+                    </ul></div>
+            </div>
+           
+            
+        </div>
+        </div>
+    </div>
+    <div id="blur" class="modal">
+        <div class="close" id="close"><img src="X.png" id="x"></div>
+        <img class="modalPic" id="image">
+    </div>
+    <button id="scrollToTop" onclick="scroll()">
+        <img src="pngegg.png" onclick="scroll()">
+    </button>
+    <div id="bannerSadrzaj" class="diff">
+        <h3 id="bannerNaslov">AUTOMATSKE PUŠKE</h3>
+        <p id="bannerText">
+        </p>
+        <a href="automatskePuske.html" id="bannerLink">DETALJNIJE &#8594;</a>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/CosaPfk/"><img src="fejsbuk black.png" class="socialImg"></a>
+            <a href="https://www.instagram.com/cosa__12/"><img src="instagram black.png" class="socialImg"></a>
+            <a href="https://twitter.com/cosaa12"><img src="ptica black.png" class="socialImg"></a>
+            <a href="https://www.youtube.com/channel/UC-CBhmxU7__14kiT8ViXsNw"><img src="jubito black.png" class="socialImg" id="yt"></a>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

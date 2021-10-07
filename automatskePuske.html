@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oruzje-Info Automatske Puške</title>
+</head>
+<body>
+    <header>
+        <img src="hamburger black.png" id='hamburger' onclick='hamburgerToggle()'>
+        <a href="index.html" id="logo">ORUZJE - INFO</a>
+        <div id="navigacioni">
+        <a href="index.html" class="navItem">Naslovna</a>
+        <a href="automatskePuske.html" class="navItem">Automatske puške</a>
+        <a href="automati.html" class="navItem">Automati</a>
+        <a href="snajperi.html" class="navItem">Snajperske puške</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem">Oružje za podršku</a>
+        <a href="pistolji.html" class="navItem">Pištolji</a>
+        </div>
+        <img src="pngegg.png" id="menuIcon" onclick="dropDown()">
+       
+    </header>
+    <div id="hamburgerMenu">
+        <a href="index.html" class="navItem ham">Naslovna</a>
+        <a href="automatskePuske.html" class="navItem ham">Automatske puške</a>
+        <a href="automati.html" class="navItem ham">Automati</a>
+        <a href="snajperi.html" class="navItem ham">Snajperske puške</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem ham">Oruzje za podršku</a>
+        <a href="pistolji.html" class="navItem ham">Pištolji</a>
+    </div>
+    <div id="optionsMenu">
+        <div class="optionsContent">
+            <p>Promena jezika: </p>
+            <div id="langSelect">
+                <a href="automatskePuske.html"><img src="srb.png" class="langIcon" title="Srpski"></a>
+                <a href="automatskePuske-eng.html"><img src="gbr.png" class="langIcon" title="English"></a>
+                </div> 
+        </div>
+        <div class="optionsContent">
+            <p>Promena teme: </p>
+            <div id="langSelect">
+             <div id="frame" class="frame">
+                <div class="ball" id="ball">D</div>
+            </div>
+            <input type="checkbox" id="check" class="check" onchange="modeChange()" title="Promena teme">
+            </div>
+            </div>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Automatske puške</h4>
+        <p>
+            Jurišna puška ili automatska puška je automatsko oružje velike vatrene moći, velikog kapaciteta i male težine. Dejstvuje jedinačno ili automatski. Kod nekih modela pored ova dva načina dejstva, razdvajač paljbe nudi i treće: kratkim rafalom.
+Jurišna puška danas predstavlja uobičajeno pešadijsko oružje. Koristi takozvanu srednju puščanu municiju malog kalibra i velike početne brzine, koja ima veće barutno punjenje od pištoljske ali manje od puščane i mitraljeske. Funkcioniše na principu pozjamice barutnih gasova. Karakteriše je brzo izmenjivi okvir, ređe doboš, velikog kapaciteta, obično oko 25 do 35 metaka.
+Jurišna puška je namenjena za dejstva na daljinama od oko 400 metara, a najbolji rezultati se postižu kratkim rafalima.
+        </p>
+    </div>
+    <div class="sadrzaj">
+        <h4 class="naslovi">Najpoznatije automatske puške:</h4>
+        <div id="flex-container">
+            <div class="content"><img src="automatske puske/ak47.jpeg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>AK 47</h3>
+                    <ul>
+                        <li>Kalibar: 7,62 x 39 mm</li>
+                        <li>Kapacitet okvira: 30 metaka</li>
+                        <li>Teoretska brzina paljbe: 600 met/min</li>
+                        <li>Dužina oružja: 870 mm</li>
+                        <li>Dužina cevi: 415 mm</li>
+                        <li>Težina: 4,3 kg</li>
+                        <li>Maks. efektivni domet: 1500 m</li>
+                        <li>Godina proizvodnje: 1948.</li>
+                        <li>Zemlja porekla: SSSR</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/fn scar.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>FN Scar - L</h3>
+                    <ul>
+                        <li>Kalibar: 5,56 x 45 mm NATO</li>
+                        <li>Kapacitet okvira: 30 metaka</li>
+                        <li>Teoretska brzina paljbe: 625 met/min</li>
+                        <li>Duzina oruzja: 889 mm</li>
+                        <li>Duzina cevi: 351 mm</li>
+                        <li>Tezina: 3,29 kg</li>
+                        <li>Maks. efektivni domet: 500 m</li>
+                        <li>Godina proizvodnje: 2004.</li>
+                        <li>Zemlja porekla: Belgija</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/hk416.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Heckler & Koch 416</h3>
+                    <ul>
+                        <li>Kalibar: 5,56 x 45 mm NATO</li>
+                        <li>Kapacitet okvira: 30 metaka</li>
+                        <li>Teoretska brzina paljbe: 900 met/min</li>
+                        <li>Duzina oruzja: 881 mm</li>
+                        <li>Duzina cevi: 230 mm</li>
+                        <li>Tezina: 3,02 kg</li>
+                        <li>Maks. efektivni domet: do 500m</li>
+                        <li>Godina proizvodnje: 2004.</li>
+                        <li>Zemlja porekla: Nemačka</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/g36c.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Heckler & Koch G36c</h3>
+                    <ul>
+                        <li>Kalibar: 5,56 x 45 mm NATO</li>
+                        <li>Kapacitet okvira: 30 metaka</li>
+                        <li>Teoretska brzina paljbe: 750 met/min</li>
+                        <li>Duzina oruzja: 720 mm</li>
+                        <li>Duzina cevi: 228 mm</li>
+                        <li>Tezina: 2,82 kg</li>
+                        <li>Maks. efektivni domet: 200 m</li>
+                        <li>Godina proizvodnje: 2001.</li>
+                        <li>Zemlja porekla: Nemačka</li>
+                    </ul></div>
+                
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/m16.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Colt M16</h3>
+                    <ul>
+                        <li>Kalibar: 5,56 x 45 mm NATO</li>
+                        <li>Kapacitet okvira: 20 metaka</li>
+                        <li>Teoretska brzina paljbe: 45-60 met/min</li>
+                        <li>Duzina oruzja: 1003 mm</li>
+                        <li>Duzina cevi: 508 mm</li>
+                        <li>Tezina: 4 kg</li>
+                        <li>Maks. efektivni domet: 550 m</li>
+                        <li>Godina proizvodnje: 1963.</li>
+                        <li>Zemlja porekla: SAD</li>
+                    </ul></div>
+            </div>
+            <hr class="rule">
+            <div class="content"><img src="automatske puske/m70.jpg" onclick="modal(this.src)" class="template">
+                <div id="tekst"><h3>Zastava M70</h3>
+                    <ul>
+                        <li>Kalibar: 7,62 x 39 mm</li>
+                        <li>Kapacitet okvira: 30 metaka</li>
+                        <li>Teoretska brzina paljbe: 620 met/min</li>
+                        <li>Duzina oruzja: 900 mm</li>
+                        <li>Duzina cevi: 415 mm</li>
+                        <li>Tezina: 4.2 kg</li>
+                        <li>Maks. efektivni domet: 300 m</li>
+                        <li>Godina proizvodnje: 1970.</li>
+                        <li>Zemlja porekla: SFR Jugoslavija / Srbija</li>
+                    </ul></div>
+            </div>
+                        
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    <button id="scrollToTop" onclick="scroll()">
+        <img src="pngegg.png" alt="">
+    </button>
+    <div id="bannerSadrzaj" class="sadrzaj diff">
+        <h3 id="bannerNaslov">AUTOMATSKE PUŠKE</h3>
+        <p id="bannerText">
+        </p>
+        <a href="automatskePuske.html" id="bannerLink">DETALJNIJE &#8594;</a>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/CosaPfk/"><img src="fejsbuk black.png" class="socialImg"></a>
+            <a href="https://www.instagram.com/cosa__12/"><img src="instagram black.png" class="socialImg"></a>
+            <a href="https://twitter.com/cosaa12"><img src="ptica black.png" class="socialImg"></a>
+            <a href="https://www.youtube.com/channel/UC-CBhmxU7__14kiT8ViXsNw"><img src="jubito black.png" class="socialImg" id="yt"></a>
+          </div>
+    </footer>
+    <div id="blur" class="modal">
+        <div class="close" id="close"><img src="X.png" id="x"></div>
+        <img class="modalPic" id="image">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

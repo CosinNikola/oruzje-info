@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oruzje-Info Naslovna</title>
+</head>
+<body onload="bannerImgEng()">
+    <header>
+        <img src="hamburger black.png" id='hamburger' onclick='hamburgerToggle()'>
+        <a href="index-eng.html" id="logo">ORUZJE - INFO</a>
+        <div id="navigacioni">
+        <a href="index-eng.html" class="navItem">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem">Assault rifles</a>
+        <a href="automati.html" class="navItem">Submachine guns</a>
+        <a href="snajperi.html" class="navItem">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku.html" class="navItem">Support weapons</a>
+        <a href="pistolji.html" class="navItem">Handguns</a>
+        </div>
+        <img src="pngegg.png" id="menuIcon" onclick="dropDown()">
+       
+    </header>
+    <div id="bannerSadrzaj">
+        <h3 id="bannerNaslov">AUTOMATSKE PUŠKE</h3>
+        <a href="automatskePuske.html" id="bannerLink">MORE &#8594;</a>
+    </div>
+    <div id="bannerContainer">
+        <div id="bannerPic"><img src="banner.jpg" id="banner">
+            <!-- <div id="bannerPicContent" class="sadrzaj"><h3 id="bannerPicTitle">AUTOMATSKE PUSKE</h3>
+                <a href="automatskePuske.html" id="bannerPicLink">DETALJNIJE</a></div>             -->
+        </div>
+        
+    </div>
+    <div id="hamburgerMenu">
+        <a href="index-eng.html" class="navItem ham">Home</a>
+        <a href="automatskePuske-eng.html" class="navItem ham">Assault rifles</a>
+        <a href="automati-eng.html" class="navItem ham">Submachine guns</a>
+        <a href="snajperi-eng.html" class="navItem ham">Sniper rifles</a>
+        <a href="oruzjeZaPodrsku-eng.html" class="navItem ham">Support guns</a>
+        <a href="pistolji-eng.html" class="navItem ham">Handguns</a>
+    </div>
+    <div id="optionsMenu">
+        <div class="optionsContent" id="langSelectEng">
+            <p>Language: </p>
+            <div id="langSelect">
+                <a href="index.html"><img src="srb.png" class="langIcon" title="Srpski"></a>
+                <a href="index-eng.html"><img src="gbr.png" class="langIcon" title="English"></a>
+                </div> 
+        </div>
+        <div class="optionsContent" id="langSelectEng">
+            <p>Theme: </p>
+            <div id="langSelect">
+             <div id="frame" class="frame">
+                <div class="ball" id="ball">D</div>
+            </div>
+            <input type="checkbox" id="check" class="check" onchange="modeChange()" title="Promena teme">
+            </div>
+            </div>
+    </div>
+
+    <div class="sadrzaj" id="naslovnaSad">
+        <h4 class="naslovi">
+            Info
+        </h4>
+        <p>
+            Send us an email for any questions or suggestions: <br>
+            <a href="mailto:oruzje-info@gmail.com" class="korisniLinkovi">oruzje-info@gmail.com</a>
+        </p>
+        
+    </div>
+    <div class="sadrzaj" id="naslovnaSad">
+        <h4 class="naslovi">
+            Links
+        </h4>
+            <a href="https://www.mod.gov.rs" class="korisniLinkovi">Ministry of defence</a> <br>
+            <a href="http://www.mup.gov.rs/wps/portal/sr/" class="korisniLinkovi">Ministry of interior</a> <br>
+            <a href="https://specijalne-jedinice.com/" class="korisniLinkovi">Specijalne-Jedinice.com</a><br>
+            <a href="https://www.zastava-arms.rs/" class="korisniLinkovi">Zastava Oružje</a>
+        
+    </div>
+    </div>
+    <div id="blur" class="modal"><div id="close" onclick="close()">X</div></div>
+    <button id="scrollToTop" onclick="scroll()">
+        <img src="pngegg.png" onclick="scroll()">
+    </button>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/CosaPfk/"><img src="fejsbuk black.png" class="socialImg"></a>
+            <a href="https://www.instagram.com/cosa__12/"><img src="instagram black.png" class="socialImg"></a>
+            <a href="https://twitter.com/cosaa12"><img src="ptica black.png" class="socialImg"></a>
+            <a href="https://www.youtube.com/channel/UC-CBhmxU7__14kiT8ViXsNw"><img src="jubito black.png" class="socialImg" id="yt"></a>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
