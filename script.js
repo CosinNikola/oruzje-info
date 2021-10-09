@@ -81,8 +81,8 @@ let content = document.getElementsByClassName('content');
 let logo = document.getElementById('logo');
 let menuIcon = document.getElementById('menuIcon');
 let socialImg = document.getElementsByClassName('socialImg');
-let socialImgSrcB = ["fejsbuk black.png", "instagram black.png", "ptica black.png", "jubito black.png"];
-let socialImgSrcW = ["fejsbuk.png", "instagram.png", "ptica.png", "jubito.png"];
+let socialImgSrcB = ["slike/fejsbuk black.png", "slike/instagram black.png", "slike/ptica black.png", "slike/jubito black.png"];
+let socialImgSrcW = ["slike/fejsbuk.png", "slike/instagram.png", "slike/ptica.png", "slike/jubito.png"];
 let hr = document.getElementsByTagName('hr');
 let bannerSadrzaj = document.getElementById('bannerSadrzaj');
 let bannerList = document.getElementsByClassName('bannerList');
@@ -92,7 +92,7 @@ function modeChange(){
         frame.style.backgroundColor = "rgba(150,150,150,0.9)";
         frame.style.borderColor = "black";
         ball.style.backgroundColor = "black";
-        body.style.background = "url('pozadina.jpg')";
+        body.style.background = "url('slike/pozadina.jpg')";
         header.style.backgroundColor = "rgba(150,150,150,0.9)";
         footer.style.backgroundColor = "rgba(150,150,150,0.9)";
         ball.innerHTML = "D";
@@ -101,7 +101,7 @@ function modeChange(){
         optMenu.style.borderColor = "rgba(150,150,150)";
         optMenu.style.color = "black";
         hamburgerMenu.style.backgroundColor = "rgb(150,150,150)";
-        hamburger.src = "hamburger black.png";
+        hamburger.src = "slike/hamburger black.png";
         bannerSadrzaj.style.backgroundColor = "rgba(150,150,150,0.9)";
         bannerSadrzaj.style.color = "black";
         bannerHREF.style.color = "black";
@@ -117,7 +117,7 @@ function modeChange(){
        for (let k = 0; k < content.length; k++) {
            content[k].style.color = "black";
        }
-       menuIcon.src = "pngegg.png"
+       menuIcon.src = "slike/pngegg.png"
        for (let m = 0; m < socialImg.length; m++) {
         socialImg[m].src = socialImgSrcB[m]; 
         for (let n = 0; n < korisniLinkovi.length; n++) {
@@ -135,7 +135,7 @@ function modeChange(){
         frame.style.backgroundColor = "rgba(50,50,50,0.95)";
         frame.style.borderColor = "white";
         ball.style.backgroundColor = "white";
-        body.style.background = "url('urb.jpg')";
+        body.style.background = "url('slike/urb.jpg')";
         header.style.backgroundColor = "rgba(50,50,50,0.95)";
         footer.style.backgroundColor = "rgba(50,50,50,0.95)";
         ball.innerHTML = "L";
@@ -144,7 +144,7 @@ function modeChange(){
         optMenu.style.borderColor = "rgba(50,50,50)";
         optMenu.style.color = "white";
         hamburgerMenu.style.backgroundColor = "rgb(50,50,50)";
-        hamburger.src = "hamburger white.png";
+        hamburger.src = "slike/hamburger white.png";
         bannerSadrzaj.style.backgroundColor = "rgba(50,50,50,0.95)";
         bannerSadrzaj.style.color = "white";
         bannerHREF.style.color = "white";
@@ -159,7 +159,7 @@ function modeChange(){
         for (let k = 0; k < content.length; k++) {
             content[k].style.color = "white";
         }
-        menuIcon.src = "dropdown bela.png";
+        menuIcon.src = "slike/dropdown bela.png";
         for (let m = 0; m < socialImg.length; m++) {
             socialImg[m].src = socialImgSrcW[m];       
         }
@@ -181,7 +181,7 @@ function dropDown(){
 let bannerHREF = document.getElementById('bannerLink');
 function bannerImgSrb(){
     let banner = document.getElementById('banner');
-    let slike = ['banner.jpg', 'banner1.jpg', 'banner2.jpg', 'banner3.jpg','banner4.jpg'];
+    let slike = ['slike/banner.jpg', 'slike/banner1.jpg', 'slike/banner2.jpg', 'slike/banner3.jpg','slike/banner4.jpg'];
     let bannerNaslov = document.getElementById('bannerNaslov');
     let bannerTitleSrb = ['AUTOMATSKE PUŠKE', 'AUTOMATI', 'SNAJPERSKE PUŠKE', "ORUŽJE ZA PODRŠKU", 'PIŠTOLJI'];
     let bannerLink = ['automatskePuske.html','automati.html', 'snajperi.html', 'oruzjeZaPodrsku.html', 'pistolji.html'];
@@ -194,7 +194,7 @@ function bannerImgSrb(){
 }
 function bannerImgEng(){
     let banner = document.getElementById('banner');
-    let slike = ['banner.jpg', 'banner1.jpg', 'banner2.jpg', 'banner3.jpg','banner4.jpg'];
+    let slike = ['slike/banner.jpg', 'slike/banner1.jpg', 'slike/banner2.jpg', 'slike/banner3.jpg','slike/banner4.jpg'];
     let bannerNaslov = document.getElementById('bannerNaslov');
     let bannerTitleEng = ['ASSAULT RIFLES', 'SUBMACHINE GUNS', 'SNIPER RIFLES', "SUPPORT WEAPONS", 'HANDGUNS'];
     let bannerLink = ['automatskePuske-eng.html','automati-eng.html', 'snajperi-eng.html', 'oruzjeZaPodrsku-eng.html', 'pistolji-eng.html'];
@@ -235,10 +235,10 @@ scrollToTop.onclick = () => {window.scrollTo({top : 0, behavior: 'smooth'})};
 let hamburger = document.getElementById('hamburger');
 let hamburgerMenu = document.getElementById('hamburgerMenu');
 function hamburgerToggle(){
-    if(hamburgerMenu.style.display == 'none'){
-        hamburgerMenu.style.display = 'flex';
+    if(hamburgerMenu.style.display == 'flex'){
+        hamburgerMenu.style.display = 'none';
     }
     else{
-        hamburgerMenu.style.display = 'none';
+        hamburgerMenu.style.display = 'flex';
     }
 }
