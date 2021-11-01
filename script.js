@@ -61,11 +61,11 @@ let navItem = document.getElementsByClassName('navItem');
 //     }
 // }
 
-let i = 0;
+let a = 0;
 let pics = document.getElementsByClassName("template");
-while(i < pics.length){
-    pics[i].title = "Kliknite za uvecanje";
-    i++;
+while(a < pics.length){
+    pics[a].title = "Kliknite za uvecanje";
+    a++;
 }
 
 let ball = document.getElementById('ball');
@@ -185,11 +185,11 @@ function bannerImgSrb(){
     let bannerNaslov = document.getElementById('bannerNaslov');
     let bannerTitleSrb = ['AUTOMATSKE PUŠKE', 'AUTOMATI', 'SNAJPERSKE PUŠKE', "ORUŽJE ZA PODRŠKU", 'PIŠTOLJI'];
     let bannerLink = ['automatskePuske.html','automati.html', 'snajperi.html', 'oruzjeZaPodrsku.html', 'pistolji.html'];
-    i++;
-    if(i > slike.length){i = 1};
-    banner.src = slike[i - 1];
-    bannerNaslov.innerHTML = bannerTitleSrb[i - 1];
-    bannerHREF.href = bannerLink[i - 1];
+    a++;
+    if(a > slike.length){a = 1};
+    banner.src = slike[a - 1];
+    bannerNaslov.innerHTML = bannerTitleSrb[a - 1];
+    bannerHREF.href = bannerLink[a - 1];
     setTimeout(bannerImgSrb,2200);
 }
 function bannerImgEng(){
@@ -198,11 +198,11 @@ function bannerImgEng(){
     let bannerNaslov = document.getElementById('bannerNaslov');
     let bannerTitleEng = ['ASSAULT RIFLES', 'SUBMACHINE GUNS', 'SNIPER RIFLES', "SUPPORT WEAPONS", 'HANDGUNS'];
     let bannerLink = ['automatskePuske-eng.html','automati-eng.html', 'snajperi-eng.html', 'oruzjeZaPodrsku-eng.html', 'pistolji-eng.html'];
-    i++;
-    if(i > slike.length){i = 1};
-    banner.src = slike[i - 1];
-    bannerNaslov.innerHTML = bannerTitleEng[i - 1];
-    bannerHREF.href = bannerLink[i - 1];
+    a++;
+    if(a> slike.length){a = 1};
+    banner.src = slike[a - 1];
+    bannerNaslov.innerHTML = bannerTitleEng[a - 1];
+    bannerHREF.href = bannerLink[a - 1];
     setTimeout(bannerImgEng,2200);
 }
 let bannerPicContent = document.getElementById('bannerPicContent');
