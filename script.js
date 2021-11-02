@@ -1,4 +1,5 @@
-function modal(src){
+"use strict"
+function modal(src) {
     let blur = document.getElementById('blur');
     let img = document.getElementById('image');
     let close = document.getElementById('close'); 
@@ -8,58 +9,7 @@ function modal(src){
         blur.style.display = "none";
     }
 }
-// let naslovi = document.getElementsByClassName('naslovi');
 let navItem = document.getElementsByClassName('navItem');
-// let sadrzajNaslovnaNasloviSrb = ["O nama", "Informacije", "Korisni linkovi"];
-// let sadrzajNaslovnaSrb = [`Sajt Oruzje - Info je nastao od strane zaljubljenika u vatreno oružje, a u nameri da tu ljubav prenesemo na neke nove ljude i nove generacije.Ovaj sajt vam pruža osnovne informacije o najzastupljenijim klasama vatrenog oružja kao i o najzastupljenijim modelima iz pomenutih klasa.
-// Nadamo se da će vam boravak na našem sajtu biti zanimljiv i u neku ruku edukativan.
-// Dobrodošli!`, `Za sva pitanja i predloge obratite nam se putem mejla na adresu: <br>
-// <a href="mailto:oruzje-info@gmail.com" class="korisniLinkovi">oruzje-info@gmail.com</a>`, `<a href="https://www.mod.gov.rs" class="korisniLinkovi">Ministarstvo odbrane</a> <br>
-// <a href="http://www.mup.gov.rs/wps/portal/sr/" class="korisniLinkovi">Ministarstvo unutrašnjih poslova</a> <br>
-// <a href="https://specijalne-jedinice.com/" class="korisniLinkovi">Specijalne-Jedinice.com</a><br>
-// <a href="https://www.zastava-arms.rs/" class="korisniLinkovi">Zastava Oružje</a>`];
-// let sadrzajNaslovnaNasloviEng = ["About us", "Info", "Links"];
-// let sadrzajNaslovnaEng = [``]
-// function language(a){
-//     let i = 0;
-//     let srbNav = ["Naslovna", "Automatske puske", "Automati", "Snajperske puske", "Oruzje za podrsku", "Pistolji"];
-//     let engNav = ["Home", "Assault rifles", "Submachine guns", "Sniper rifles", "Support weapons", "Pistols"];
-//     if(a == 0){
-//         for (i = 0; i< navItem.length; i++) {
-//             navItem[i].innerHTML = srbNav[i];
-//         }
-//         // while(i < navItem.length){
-//         //     navItem[i].innerHTML = srbNav[i];
-//         //     i++;
-//         // }
-        
-//         for (i = 0; i< naslovi.length; i++) {
-//             naslovi[i].innerHTML = sadrzajNaslovnaNasloviSrb[i];
-//         }
-//         // while(i < naslovi.length)
-//         // {
-//         //     naslovi[i].innerHTML = sadrzajNaslovnaNasloviSrb[i];
-//         //     i++;
-//         // }
-//     }
-//     else {
-//         for (i = 0; i< navItem.length; i++) {
-//             navItem[i].innerHTML = engNav[i];
-//         }
-//         // while(i < navItem.length){
-//         //     navItem[i].innerHTML = engNav[i];
-//         //     i++;
-//         // }
-//         for (i = 0; i< naslovi.length; i++) {
-//             naslovi[i].innerHTML = sadrzajNaslovnaNasloviEng[i];
-//         }
-//         // while(i < naslovi.length)
-//         // {
-//         //     naslovi[i].innerHTML = sadrzajNaslovnaNasloviEng[i];
-//         //     i++;
-//         // }
-//     }
-// }
 
 let a = 0;
 let pics = document.getElementsByClassName("template");
@@ -174,10 +124,8 @@ function modeChange(){
 }
 
 function dropDown(){
-    // let optMenu = document.getElementById('optionsMenu');
    optMenu.style.display = (optMenu.style.display === "block") ? 'none' : 'block';
 }
-// menuIcon.onclick = () => {dropDown();}
 let bannerHREF = document.getElementById('bannerLink');
 function bannerImgSrb(){
     let banner = document.getElementById('banner');
@@ -209,15 +157,7 @@ let bannerPicContent = document.getElementById('bannerPicContent');
 let scrollToTop = document.getElementById('scrollToTop');
 window.onscroll = function() {scrollVisibility()}; 
 body.onscroll = () => {scrollVisibility()};
-// function bannerPicVisibility(){
-//         if(document.documentElement.scrollTop >270){
-//             bannerPicContent.style.display = "none";
-//         }
-//         else{
-//             bannerPicContent.style.display = "flex";
-//         }
-    
-// }
+
 
 function scrollVisibility(){
     if(document.documentElement.scrollTop > 200){
@@ -229,9 +169,6 @@ function scrollVisibility(){
 }
 
 scrollToTop.onclick = () => {window.scrollTo({top : 0, behavior: 'smooth'})};
-// scroll = () =>  {
-//     window.scrollTo({top : 0, behavior: 'smooth'});
-// }
 let hamburger = document.getElementById('hamburger');
 let hamburgerMenu = document.getElementById('hamburgerMenu');
 function hamburgerToggle(){
