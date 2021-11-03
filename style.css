@@ -775,6 +775,7 @@ input[type="range"]{
         width: 20px;
     }
     footer{
+        position:absolute;
         bottom: 0px;
         height: 30px;
         padding: 10px 0px;
@@ -978,6 +979,7 @@ input[type="range"]{
         width: 20px;
     }
     footer{
+        position:absolute;
         bottom: 0px;
         height: 25px;
         padding: 10px 0px;
