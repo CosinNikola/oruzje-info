@@ -5,7 +5,7 @@ body{
     background-image: url("slike/pozadina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin:0px;
+    margin:0;
     /* height: 100%; */
     min-height: 100%;
     /* font-family: 'Courier New', Courier, monospace; */
@@ -19,8 +19,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    top: 0px;
-    left:0px;
+    top: 0;
+    left:0;
 }
 
 .navItem{
@@ -66,7 +66,7 @@ header{
 }
 .naslovi{
     /* color: white; */
-    padding: 0px;
+    padding: 0;
     font-size: 30px;
     margin: 15px;
 }
@@ -92,7 +92,7 @@ header{
 }
 #bannerSadrzaj{
     width: 70%;
-    border-radius: 0px;
+    border-radius: 0;
     margin-top: 10px;
     margin-left:auto;
     margin-right: auto;
@@ -135,7 +135,7 @@ header{
     top: 350px;
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
     float:right;
 }
 #bannerPicTitle{
@@ -166,8 +166,8 @@ header{
 footer{
     background-color:rgba(150,150,150,0.9);
     position:static;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     padding: 20px 0px;
     display:flex;
     justify-content: space-evenly;
@@ -193,7 +193,7 @@ footer{
     height: 220px;
 }
 ul{
-    margin:0px;
+    margin:0;
 }
 .content h3{
     margin: 5px;
@@ -284,7 +284,7 @@ input[type="range"]{
     left: 85px;
     top: 90px;
     background-color: rgba(150,150,150, 0.9);
-    margin: 0px;
+    margin: 0;
     /* margin-top: 10px;
     margin-right: 10px; */
 }
@@ -312,8 +312,8 @@ input[type="range"]{
      left: 70px;
      top: 85px;  
     height: 20px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 #options{
     display:flex;
@@ -421,108 +421,6 @@ input[type="range"]{
 .diff{
     visibility: hidden;
 }
-/* @media only screen and (max-width:1366px) {
-    .navItem{
-        display:inline;
-        font-size: 18px;
-    }
-    header{
-        justify-content: space-between;
-    }
-    #bannerPicContent{
-        display:block;
-        position: absolute;
-        top: 180px;
-        padding-top: 10px;
-        left: 270px;
-        padding-bottom: 5px;
-    }
-    #bannerContainer{
-        width: 80%;
-        height: 480px;
-        margin-left:auto;
-        margin-right: auto;
-
-    }
-    #banner{
-        height: 480px;
-        width: 100%;
-        margin-left:auto;
-        margin-right: auto;
-    }
-    #bannerPic{
-        width: 85%;
-        height: 300px;
-        margin-left:auto;
-        margin-right: auto;
-    }
-    #bannerSadrzaj{
-        width: 65%;
-        border-radius: 0px;
-        margin-top: 1px;
-        margin-left:auto;
-        margin-right: auto;
-        border: 1px solid white;
-        background-color: rgba(150,150,150, 0.9);
-        display:flex;
-        padding:15px 20px;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    
-    }
-    #bannerNaslov{
-        font-size: 35px;
-        text-align: center;
-        margin:0px;
-    }
-    
-    #bannerLink{
-        font-size: 30px;
-        text-decoration: none;
-        color:black;
-        margin:0px;
-    }
-   
-    #logo{
-        margin-left: 20px;
-        font-weight: bold;
-    }
-    #hamburgerMenu{
-        font-size: 10px;
-    }
-    .ham{
-        display: block;
-    }
-    .sadrzaj{
-        font-size: 18px;
-        line-height: 16px;
-    }
-    .naslovi{
-        font-size: 22px;
-    }
-    .template{
-        height: 250px;
-        width: 450px;
-    }
-    #tekst{
-        font-size: 14px;
-    }
-    #tekst h3{
-        font-size: 18px;
-        margin-left: 20px;
-    }
-    .content{
-        flex-direction: row;
-        height: 250px;
-    }
-    #naslovnaSad{
-        line-height: 22px;
-    }
-    footer{
-        position: static;
-    }
-} */
 @media only screen and (min-width:1920px) {
     #hamburger{
         display:none;
