@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /slike/
+
+sitemap: https://cosinnikola.github.io/oruzje-info/sitemap.xml
